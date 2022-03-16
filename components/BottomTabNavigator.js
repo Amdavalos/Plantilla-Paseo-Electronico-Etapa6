@@ -17,14 +17,14 @@ export default class BottomTabNavigator extends Component {
           screenOptions={({ route }) => ({
             tabBarIcon: ({ focused, color, size }) => {
               let iconName;
-//Fill the missing code below to add the route name
+//Completa el siguiente código con el nombre de ruta (route)
             if (route.name === " ") {
                 iconName = "bicycle";
               } else if (route.name === " ") {
                 iconName = "time";
               }  
 
-              // You can return any component that you like here!
+              // Puedes devolver cualquier componente aquí
               return (
                 <Ionicons
                   name={iconName}
@@ -36,7 +36,7 @@ export default class BottomTabNavigator extends Component {
             }
           })}
           tabBarOptions={{
-            //fill the code to add #FBE5C0 to activeTintColor and black for inactiveTintColor 
+            //Completa el código añadiendo #FBE5C0 para activeTintColor y "black" para inactiveTintColor 
            activeTintColor: " ",
            inactiveTintColor: " ",
             style: {
@@ -55,8 +55,8 @@ export default class BottomTabNavigator extends Component {
             }
           }}
         >
-          <Tab.Screen name="Ride" component={RideScreen} />
-          <Tab.Screen name="Ride History" component={RideHistoryScreen} />
+          <Tab.Screen name="Viaje" component={RideScreen} />
+          <Tab.Screen name="Historial" component={RideHistoryScreen} />
         </Tab.Navigator>
       </NavigationContainer>
     );
