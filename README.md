@@ -1,2 +1,2 @@
-# PRO-C72-PROJECT
+# PRO-C72-PROYECTO
 Plantilla del proyecto PRO-C80
